@@ -8,6 +8,7 @@ import os
 dotenv_file = dotenv.find_dotenv()
 dotenv.load_dotenv(dotenv_file)
 
+# Discord ID is the ID of the application
 client_id = os.environ["discord-id"]
 RPC = Presence(client_id)  # Initialize the client class
 RPC.connect()  # Start the handshake loop
